@@ -46,7 +46,8 @@ const server = http.createServer((req, res) => {
 })
 
 const router = {
-  users: handlers.users
+  register: handlers.register,
+  login: handlers.login
 }
 
 server.listen(config.port, () => {
